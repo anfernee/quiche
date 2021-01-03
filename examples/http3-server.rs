@@ -27,6 +27,8 @@
 #[macro_use]
 extern crate log;
 
+use env_logger;
+
 use std::net;
 
 use std::collections::HashMap;
@@ -69,6 +71,8 @@ fn main() {
         println!("\nSee tools/apps/ for more complete implementations.");
         return;
     }
+
+    env_logger::init();
 
     // Setup the event loop.
     let poll = mio::Poll::new().unwrap();

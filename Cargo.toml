@@ -55,6 +55,7 @@ libc = "0.2"
 libm = "0.2"
 ring = "0.16"
 lazy_static = "1"
+env_logger = "0.8.2"
 boring-sys = { version = "1.0.2", optional = true }
 qlog = { version = "0.4", path = "tools/qlog", optional = true }
 
